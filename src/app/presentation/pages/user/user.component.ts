@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { UsersComponent } from '../../widgets/users/users.component';
 
 @Component({
-  selector: 'app-user',
   standalone: true,
+  selector: 'app-user',
   imports: [
     UsersComponent
   ],

@@ -8,11 +8,11 @@ import { RedirectionService } from '../../routes/redirection.service';
 import { BaseComponent } from '../../base.component';
 
 @Component({
-  selector: 'app-login',
   standalone: true,
+  selector: 'app-login',
   imports: [
-    CommonModule,
-    ReactiveFormsModule,
+      CommonModule,
+      ReactiveFormsModule,
   ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'

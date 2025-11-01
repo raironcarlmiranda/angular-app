@@ -7,20 +7,20 @@ import { User } from '../../../domain/entities/user';
 import { RedirectionService } from '../../routes/redirection.service';
 
 @Component({
-  selector: 'app-users',
   standalone: true,
+  selector: 'app-users',
   imports: [
-    CommonModule,
+      CommonModule,
   ],
   templateUrl: './users.component.html',
   styleUrl: './users.component.css'
 })
 export class UsersComponent extends BaseComponent<User[]>{
-  
+
   constructor(private userUseCase: UserUseCase) {
     super();
   }
-  
+
   ngOnInit(){
     this.getusers();
   }

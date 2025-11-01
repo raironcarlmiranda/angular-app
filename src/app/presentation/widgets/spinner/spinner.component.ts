@@ -4,10 +4,10 @@ import { SpinnerUseCase } from '../../../domain/use-cases/spinner.use.case';
 import { BaseComponent } from '../../base.component';
 
 @Component({
-  selector: 'app-spinner',
   standalone: true,
+  selector: 'app-spinner',
   imports: [
-    CommonModule
+      CommonModule
   ],
   templateUrl: './spinner.component.html',
   styleUrl: './spinner.component.css'

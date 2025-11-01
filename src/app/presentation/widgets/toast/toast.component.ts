@@ -4,8 +4,8 @@ import { BaseComponent } from '../../base.component';
 declare const bootstrap: any;
 
 @Component({
-  selector: 'app-toast',
   standalone: true,
+  selector: 'app-toast',
   templateUrl: './toast.component.html',
   styleUrls: ['./toast.component.css']
 })

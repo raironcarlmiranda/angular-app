@@ -5,21 +5,20 @@ import { SpinnerComponent } from './presentation/widgets/spinner/spinner.compone
 import { ToastComponent } from './presentation/widgets/toast/toast.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [
-    RouterOutlet,
-    NavbarComponent,
-    SpinnerComponent,
-    ToastComponent
-  ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    standalone: true,
+    selector: 'app-root',
+    imports: [
+        RouterOutlet,
+        SpinnerComponent,
+        ToastComponent
+    ],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'my-app Philippines Region';
   constructor(){
-    //setup access token 
+    //setup access token
     console.log("appComponent")
   }
 }

@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-empty',
   standalone: true,
-  imports: [ RouterOutlet ],
+  selector: 'app-empty',
+  imports: [RouterOutlet],
   templateUrl: './empty.component.html',
   styleUrl: './empty.component.css'
 })

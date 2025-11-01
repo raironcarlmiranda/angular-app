@@ -4,11 +4,11 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-navbar',
   standalone: true,
+  selector: 'app-navbar',
   imports: [
-    CommonModule,
-    RouterModule
+      CommonModule,
+      RouterModule
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
