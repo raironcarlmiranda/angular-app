@@ -1,0 +1,26 @@
+/* Make overlay cover the entire viewport */
+#loading-overlay {
+  position: fixed;      /* Fixed to viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;        /* Full width */
+  height: 100vh;       /* Full height */
+  background: rgba(255, 255, 255, 0.7); /* Optional: translucent background */
+  display: flex;       /* Use flexbox to center spinner */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;       /* On top of everything */
+  pointer-events: all; /* Capture all pointer events (blocks clicks) */
+}
+
+/* Hide pointer events on the spinner itself, if needed, to avoid nested interference */
+#loading-overlay .spinner-border {
+  pointer-events: none;
+}
+
+.custom-spinner {
+  width: 5rem;       /* Bigger size */
+  height: 5rem;      /* Bigger size */
+  border-width: 0.7em; /* Thicker border */
+  pointer-events: none;
+}
