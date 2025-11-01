@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { Result } from '../../../core/model/result';
 import { UserUseCase } from '../../../domain/use-cases/user.use.case';
@@ -9,9 +9,7 @@ import { RedirectionService } from '../../routes/redirection.service';
 @Component({
   standalone: true,
   selector: 'app-users',
-  imports: [
-      CommonModule,
-  ],
+  imports: [],
   templateUrl: './users.component.html',
   styleUrl: './users.component.css'
 })

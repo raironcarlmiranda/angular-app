@@ -5,10 +5,14 @@
       <th scope="col">Name</th>
     </tr>
   </thead>
-  <tbody *ngIf="data()">
-    <tr *ngFor="let user of data()">
-      <td>{{ user.id }}</td>
-      <td>{{ user.first_name }}</td>
-    </tr>
-  </tbody>
+  @if (data()) {
+    <tbody>
+      @for (user of data(); track user) {
+        <tr>
+          <td>{{ user.id }}</td>
+          <td>{{ user.first_name }}</td>
+        </tr>
+      }
+    </tbody>
+  }
 </table>

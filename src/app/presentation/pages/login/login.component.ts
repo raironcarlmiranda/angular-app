@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { AuthUseCase } from '../../../domain/use-cases/auth.use.case';
 import { Result } from '../../../core/model/result';
@@ -11,9 +11,8 @@ import { BaseComponent } from '../../base.component';
   standalone: true,
   selector: 'app-login',
   imports: [
-      CommonModule,
-      ReactiveFormsModule,
-  ],
+    ReactiveFormsModule
+],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
